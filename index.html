@@ -18,38 +18,38 @@
   --story-bg:rgba(255,255,255,0.04); --story-border:rgba(255,255,255,0.09); --story:#6a6866;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.6;padding:36px 28px;min-height:100vh}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.65;padding:36px 28px;min-height:100vh}
 
 .header{margin-bottom:32px}
-.brand{font-family:'Playfair Display',serif;font-size:11px;font-weight:400;color:var(--accent);letter-spacing:.14em;text-transform:uppercase;margin-bottom:5px}
-.title{font-family:'Playfair Display',serif;font-size:32px;font-weight:900;line-height:1.1;margin-bottom:6px}
-.subtitle{font-size:12px;color:var(--text2);font-weight:300}
+.brand{font-family:'Playfair Display',serif;font-size:12px;font-weight:400;color:var(--accent);letter-spacing:.14em;text-transform:uppercase;margin-bottom:5px}
+.title{font-family:'Playfair Display',serif;font-size:34px;font-weight:900;line-height:1.1;margin-bottom:6px}
+.subtitle{font-size:14px;color:var(--text2);font-weight:300}
 
 .stats{display:flex;gap:10px;margin-bottom:28px;flex-wrap:wrap}
 .stat{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:12px 16px;min-width:100px}
-.stat-label{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:3px}
-.stat-value{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;line-height:1}
-.stat-value span{font-size:11px;font-family:'DM Sans',sans-serif;color:var(--text2);font-weight:400}
+.stat-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:3px}
+.stat-value{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;line-height:1}
+.stat-value span{font-size:12px;font-family:'DM Sans',sans-serif;color:var(--text2);font-weight:400}
 
 .legend{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;padding:14px 16px;background:var(--bg2);border-radius:10px;border:1px solid var(--border)}
-.legend-title{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);width:100%;margin-bottom:8px}
-.leg{display:flex;align-items:center;gap:7px;font-size:11.5px;color:var(--text2)}
+.legend-title{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);width:100%;margin-bottom:8px}
+.leg{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--text2)}
 .legdot{width:28px;height:6px;border-radius:3px;flex-shrink:0}
-.leg strong{color:var(--text);font-weight:600;font-size:11.5px}
+.leg strong{color:var(--text);font-weight:600;font-size:13px}
 
-.tabs{display:flex;gap:4px;margin-bottom:22px;background:var(--bg2);padding:4px;border-radius:10px;border:1px solid var(--border);width:fit-content}
-.tab{padding:6px 16px;border-radius:7px;font-size:12px;font-weight:500;cursor:pointer;border:none;background:transparent;color:var(--text2);transition:all .2s;font-family:'DM Sans',sans-serif;letter-spacing:.02em}
+.tabs{display:flex;gap:4px;margin-bottom:22px;background:var(--bg2);padding:4px;border-radius:10px;border:1px solid var(--border);width:fit-content;flex-wrap:wrap}
+.tab{padding:8px 18px;border-radius:7px;font-size:13px;font-weight:500;cursor:pointer;border:none;background:transparent;color:var(--text2);transition:all .2s;font-family:'DM Sans',sans-serif;letter-spacing:.02em}
 .tab:hover{color:var(--text)}
 .tab.active{background:var(--bg3);color:var(--text);border:1px solid var(--border2)}
 
 .week{display:none}
 .week.active{display:block}
-.week-label{font-size:10px;font-weight:600;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.week-label{font-size:11px;font-weight:600;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--border)}
 
-.day-block{margin-bottom:6px;display:grid;grid-template-columns:64px 1fr 1fr;gap:6px;align-items:stretch}
-.day-name{display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);background:var(--bg2);border-radius:8px;border:1px solid var(--border);min-height:70px}
+.day-block{margin-bottom:8px;display:grid;grid-template-columns:64px 1fr 1fr;gap:8px;align-items:stretch}
+.day-name{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);background:var(--bg2);border-radius:8px;border:1px solid var(--border);min-height:70px}
 
-.card{border-radius:8px;padding:10px 12px;border:1px solid;position:relative;overflow:hidden}
+.card{border-radius:10px;padding:14px 16px;border:1px solid;position:relative;overflow:hidden}
 .card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%}
 
 .card.heavy{background:var(--heavy-bg);border-color:var(--heavy-border)}
@@ -61,52 +61,72 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 .card.story{background:var(--story-bg);border-color:var(--story-border)}
 .card.story::before{background:var(--story)}
 
-.card-top{display:flex;align-items:center;gap:6px;margin-bottom:5px}
-.type-badge{font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border-radius:3px;white-space:nowrap;flex-shrink:0}
+.card-top{display:flex;align-items:center;gap:6px;margin-bottom:6px;flex-wrap:wrap}
+.type-badge{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0}
 .heavy .type-badge{background:rgba(232,133,90,0.2);color:var(--heavy)}
 .light .type-badge{background:rgba(90,157,232,0.2);color:var(--light)}
 .reuse .type-badge{background:rgba(155,125,232,0.2);color:var(--reuse)}
 .story .type-badge{background:rgba(255,255,255,0.06);color:var(--text2)}
 
-.platform{font-size:9px;font-weight:600;color:var(--text3);letter-spacing:.05em;text-transform:uppercase}
+.platform{font-size:11px;font-weight:600;color:var(--text3);letter-spacing:.04em;text-transform:uppercase}
 
-.card-title{font-size:11.5px;font-weight:600;line-height:1.35;margin-bottom:3px;color:var(--text)}
+.card-title{font-size:14px;font-weight:600;line-height:1.4;margin-bottom:5px;color:var(--text)}
 .heavy .card-title{color:#f0a882}
 .light .card-title{color:#8ab8f0}
 .reuse .card-title{color:#b8a0f0}
 
-.card-body{font-size:10.5px;font-weight:300;line-height:1.45;color:var(--text2)}
-.card-hook{font-style:italic;font-size:10px;color:var(--text3);margin-top:4px;font-family:'Playfair Display',serif;line-height:1.3}
+.card-body{font-size:13px;font-weight:400;line-height:1.55;color:var(--text2)}
+.card-hook{font-style:italic;font-size:12.5px;color:var(--text3);margin-top:5px;font-family:'Playfair Display',serif;line-height:1.4}
 
-.star-badge{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:1px 6px;border-radius:3px;background:var(--accent);color:#fff;margin-bottom:4px}
+.star-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2px 8px;border-radius:4px;background:var(--accent);color:#fff;margin-bottom:6px}
 
 /* ── Week 1 enhanced card layout ── */
-.card-tags{font-size:9.5px;color:var(--text3);margin-top:3px;font-weight:400;letter-spacing:.02em}
-.card-section{margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06)}
-.card-section-label{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:4px}
-.card-field{width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:5px;padding:6px 8px;font-size:10.5px;color:var(--text2);font-family:'DM Sans',sans-serif;resize:vertical;min-height:36px;line-height:1.4;outline:none;transition:border-color .15s}
+.card-tags{font-size:11px;color:var(--text3);margin-top:4px;font-weight:400;letter-spacing:.02em;line-height:1.6}
+.card-section{margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.06)}
+.card-section-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:5px}
+.card-field{width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:8px 10px;font-size:13px;color:var(--text2);font-family:'DM Sans',sans-serif;resize:vertical;min-height:42px;line-height:1.5;outline:none;transition:border-color .15s}
 .card-field:focus{border-color:rgba(255,255,255,0.2);color:var(--text)}
 .card-field::placeholder{color:var(--text3);font-style:italic}
-.card-actions{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
-.btn-action{font-size:10px;font-weight:600;letter-spacing:.04em;padding:5px 10px;border-radius:5px;border:1px solid;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .15s;text-decoration:none;display:inline-flex;align-items:center;gap:4px}
-.btn-script{background:rgba(232,133,90,0.1);border-color:rgba(232,133,90,0.3);color:#e8855a}
-.btn-script:hover{background:rgba(232,133,90,0.2);border-color:rgba(232,133,90,0.5)}
-.btn-graphic{background:rgba(90,157,232,0.1);border-color:rgba(90,157,232,0.3);color:#5a9de8}
-.btn-graphic:hover{background:rgba(90,157,232,0.2);border-color:rgba(90,157,232,0.5)}
-.story-pill{display:inline-block;font-size:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);border-radius:4px;padding:3px 8px;color:var(--text2);margin-top:4px;font-style:italic}
+.card-actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.btn-action{font-size:12px;font-weight:600;letter-spacing:.03em;padding:7px 14px;border-radius:6px;border:1px solid;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .15s;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
+.btn-script{background:rgba(232,133,90,0.1);border-color:rgba(232,133,90,0.35);color:#e8855a}
+.btn-script:hover{background:rgba(232,133,90,0.2);border-color:rgba(232,133,90,0.6)}
+.btn-graphic{background:rgba(90,157,232,0.1);border-color:rgba(90,157,232,0.35);color:#5a9de8}
+.btn-graphic:hover{background:rgba(90,157,232,0.2);border-color:rgba(90,157,232,0.6)}
+.story-pill{display:inline-block;font-size:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);border-radius:5px;padding:4px 10px;color:var(--text2);margin-top:5px;font-style:italic;line-height:1.5}
 
-/* Week 1 uses vertical single-column cards per day */
-.day-block-v1{margin-bottom:10px}
-.day-block-v1 .day-header{display:flex;align-items:center;gap:10px;margin-bottom:6px}
-.day-block-v1 .day-name-v1{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:rgba(232,133,90,0.08);border:1px solid rgba(232,133,90,0.2);border-radius:6px;padding:4px 10px;white-space:nowrap}
+/* Copy/caption pre-filled display */
+.card-copy{font-size:12.5px;color:var(--text2);line-height:1.55;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:6px;padding:8px 10px;margin-top:4px;font-style:italic}
+
+/* Escenas block */
+.escenas-list{list-style:none;padding:0;margin-top:4px}
+.escenas-list li{font-size:12.5px;color:var(--text2);padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.04);line-height:1.5}
+.escenas-list li:last-child{border-bottom:none}
+.escenas-list li::before{content:"↳ ";color:var(--text3);font-size:11px}
+
+/* Week 1 vertical layout */
+.day-block-v1{margin-bottom:14px}
+.day-block-v1 .day-header{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.day-block-v1 .day-name-v1{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:rgba(232,133,90,0.08);border:1px solid rgba(232,133,90,0.2);border-radius:7px;padding:6px 14px;white-space:nowrap}
 .day-block-v1 .day-divider{flex:1;height:1px;background:var(--border)}
-.cards-col{display:flex;flex-direction:column;gap:6px}
+.cards-col{display:flex;flex-direction:column;gap:8px}
 
-@media(max-width:600px){
-  body{padding:20px 14px}
-  .title{font-size:24px}
-  .day-block{grid-template-columns:44px 1fr;grid-template-rows:auto auto}
-  .day-block .card:last-child{grid-column:2}
+/* Responsive */
+@media(max-width:700px){
+  body{padding:16px 14px;font-size:15px}
+  .title{font-size:26px}
+  .tabs{width:100%}
+  .tab{padding:8px 12px;font-size:12px;flex:1;text-align:center}
+  .day-block{grid-template-columns:1fr}
+  .day-name{min-height:40px;border-radius:6px}
+  .card{padding:14px}
+  .card-title{font-size:14px}
+  .card-body{font-size:13px}
+  .btn-action{font-size:12px;padding:8px 14px;width:100%;justify-content:center}
+  .card-actions{flex-direction:column}
+  .stat{min-width:80px}
+  .stat-value{font-size:20px}
+  .leg{font-size:12px}
 }
 </style>
 </head>
@@ -142,41 +162,46 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 
 <!-- ══ SEMANA 1 ══ -->
 <div class="week active" id="w0">
-<div class="week-label">Semana 1 — "Nueva ciudad, nueva versión de mí"</div>
+<div class="week-label">Semana 30 mar – 05 abr · "Nueva ciudad, nueva versión de mí"</div>
 
 <!-- LUNES -->
 <div class="day-block-v1">
-  <div class="day-header"><div class="day-name-v1">Lunes</div><div class="day-divider"></div></div>
+  <div class="day-header"><div class="day-name-v1">Lunes 31 mar</div><div class="day-divider"></div></div>
   <div class="cards-col">
     <div class="card heavy">
-      <div class="card-top"><span class="type-badge">Heavy · Video</span><span class="platform">IG + TikTok</span></div>
-      <div class="star-badge">Video 1 de la semana</div>
-      <div class="card-title">"Nadie te dice esto sobre mudarte a una nueva ciudad"</div>
-      <div class="card-body">Habla a cámara, tono íntimo. Tu experiencia real de mudarte desde Chaclacayo a Lima. Potente desde el hook — conecta con cualquiera que haya arrancado de cero.</div>
-      <div class="card-tags">#nuevaciudad #mudarse #nuevocomienzo #cambiospositivos #empezardecero</div>
+      <div class="card-top"><span class="type-badge">Heavy · Video storytelling</span><span class="platform">IG + TikTok</span></div>
+      <div class="star-badge">Video 1 de la semana · Producción media</div>
+      <div class="card-title">"Nadie te prepara para lo que se siente mudarte a una nueva ciudad"</div>
+
+      <div class="card-section">
+        <div class="card-section-label">Hook</div>
+        <div class="card-copy">"Nadie te prepara para lo que se siente mudarte a una nueva ciudad"</div>
+      </div>
+
+      <div class="card-section">
+        <div class="card-section-label">Mensajes clave</div>
+        <div class="card-body">Emoción inicial → cambio → incertidumbre → cierre: <em>"No estaba lista… pero fui valiente"</em></div>
+      </div>
+
+      <div class="card-section">
+        <div class="card-section-label">Escenas / Tomas</div>
+        <ul class="escenas-list">
+          <li>Mirando por el balcón, suspirando</li>
+          <li>Trabajando con la laptop, disociando, con ansiedad</li>
+          <li>Moviendo muebles, mirando la pared — pensando cómo decorar</li>
+          <li>Caminando hacia la estación, esperando el metro, dentro del metro (selfie)</li>
+          <li>Caminando hasta la oficina (sin cámara frontal)</li>
+          <li>Hablando con el equipo en Comunal, mirando por la ventana</li>
+        </ul>
+      </div>
+
       <div class="card-section">
         <div class="card-section-label">Caption</div>
-        <textarea class="card-field" placeholder="Escribe tu caption aquí…" rows="2"></textarea>
+        <div class="card-copy">"Mudarte suena emocionante… hasta que lo vives.<br><br>No estaba lista, pero sabía que tenía que hacerlo.<br><br>#nuevaciudad #mudarse #empezardecero #cambiodevida #valentia #crecimientopersonal"</div>
       </div>
-      <div class="card-section">
-        <div class="card-section-label">Referencias</div>
-        <textarea class="card-field" placeholder="Frases, links, ideas de producción…" rows="2"></textarea>
-      </div>
+
       <div class="card-actions">
-        <a class="btn-action btn-script" href="#" onclick="return false">&#9654; Ver guión</a>
-        <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
-      </div>
-    </div>
-    <div class="card story">
-      <div class="card-top"><span class="type-badge">Historia</span><span class="platform">IG + TikTok</span></div>
-      <div class="card-title">Historia del día</div>
-      <div class="story-pill">"Una nueva semana de oportunidades para hacerlo mejor que ayer."</div>
-      <div class="card-body" style="margin-top:6px">Texto sobre fondo simple o foto tuya. Sin producción extra. Conecta desde el arranque del lunes.</div>
-      <div class="card-section">
-        <div class="card-section-label">Referencias</div>
-        <textarea class="card-field" placeholder="Fondo, sticker, música…" rows="1"></textarea>
-      </div>
-      <div class="card-actions">
+        <a class="btn-action btn-script" href="https://docs.google.com/document/d/1EWFd5NfuQxDdLL2mwEkEF2xLU6e0ezdKO3ORte_x1TI/edit?usp=sharing" target="_blank">&#9654; Ver guión</a>
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
     </div>
@@ -185,49 +210,31 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 
 <!-- MARTES -->
 <div class="day-block-v1">
-  <div class="day-header"><div class="day-name-v1">Martes</div><div class="day-divider"></div></div>
+  <div class="day-header"><div class="day-name-v1">Martes 01 abr</div><div class="day-divider"></div></div>
   <div class="cards-col">
     <div class="card light">
-      <div class="card-top"><span class="type-badge">Light · Trend</span><span class="platform">Solo TikTok</span></div>
+      <div class="card-top"><span class="type-badge">Light · Trend / Audio viral</span><span class="platform">Solo TikTok</span></div>
       <div class="card-title">"Lo que suena en mi cabeza desde que decidí irme de mi ciudad"</div>
-      <div class="card-body">Audio viral de Peso Pluma o trending de la semana. Frases cortas en pantalla mientras miras a cámara. Grabación: 5 minutos máximo.</div>
-      <div class="card-tags">#reinventarse #empezardecero #nuevavida #pesopluma</div>
+
+      <div class="card-section">
+        <div class="card-section-label">Formato</div>
+        <div class="card-body">Lip sync o acting con audio viral. Tomar decisiones grandes también viene con ruido mental.</div>
+      </div>
+
+      <div class="card-section">
+        <div class="card-section-label">Audio de referencia</div>
+        <div class="card-copy">
+          <a href="https://www.tiktok.com/@armandobrj37/video/7568933646380436756" target="_blank" style="color:var(--light);text-decoration:none;">&#8599; Ver audio en TikTok</a>
+        </div>
+      </div>
+
       <div class="card-section">
         <div class="card-section-label">Caption</div>
-        <textarea class="card-field" placeholder="Escribe tu caption aquí…" rows="2"></textarea>
+        <div class="card-copy">"Tomar decisiones grandes también viene con ruido mental…<br><br>#reinventarse #empezardecero #nuevavida #procesopersonal #fyp #viralperu"</div>
       </div>
-      <div class="card-section">
-        <div class="card-section-label">Referencias</div>
-        <textarea class="card-field" placeholder="Audio a usar, frases para pantalla…" rows="2"></textarea>
-      </div>
+
       <div class="card-actions">
-        <a class="btn-action btn-script" href="#" onclick="return false">&#9654; Ver guión</a>
-        <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
-      </div>
-    </div>
-    <div class="card story">
-      <div class="card-top"><span class="type-badge">Carrusel</span><span class="platform">Solo IG</span></div>
-      <div class="card-title">"3 frases que me ayudaron cuando decidí cambiar de ciudad"</div>
-      <div class="card-body">Diseño en Canva. 1 frase por slide, tipografía limpia. Slide final con tu firma y llamada a guardar. Sin grabar nada.</div>
-      <div class="card-tags">#nuevavida #crecimientopersonal #cambiodevida</div>
-      <div class="card-section">
-        <div class="card-section-label">Caption</div>
-        <textarea class="card-field" placeholder="Escribe tu caption aquí…" rows="2"></textarea>
-      </div>
-      <div class="card-section">
-        <div class="card-section-label">Referencias</div>
-        <textarea class="card-field" placeholder="Las 3 frases, paleta de color, tipografía…" rows="2"></textarea>
-      </div>
-      <div class="card-actions">
-        <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
-      </div>
-    </div>
-    <div class="card story">
-      <div class="card-top"><span class="type-badge">Historia</span><span class="platform">IG + TikTok</span></div>
-      <div class="card-title">Historia del día</div>
-      <div class="story-pill">"Hoy elige paz, incluso si todo afuera es ruido."</div>
-      <div class="card-body" style="margin-top:6px">Texto sobre fondo o foto. Rápida de hacer, poderosa de recibir.</div>
-      <div class="card-actions">
+        <a class="btn-action btn-script" href="https://docs.google.com/document/d/1EWFd5NfuQxDdLL2mwEkEF2xLU6e0ezdKO3ORte_x1TI/edit?usp=sharing" target="_blank">&#9654; Ver guión</a>
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
     </div>
@@ -236,49 +243,32 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 
 <!-- MIÉRCOLES -->
 <div class="day-block-v1">
-  <div class="day-header"><div class="day-name-v1">Miércoles</div><div class="day-divider"></div></div>
+  <div class="day-header"><div class="day-name-v1">Miércoles 02 abr</div><div class="day-divider"></div></div>
   <div class="cards-col">
-    <div class="card heavy">
-      <div class="card-top"><span class="type-badge">Heavy · Video</span><span class="platform">Solo TikTok</span></div>
-      <div class="star-badge">Video 2 de la semana</div>
-      <div class="card-title">"GRWM para ir a la ofi" — versión hablada</div>
-      <div class="card-body">Hablas a cámara mientras te arreglas. Mezcla de outfit + tu energía natural. Tono de amiga. Potencial alto para UGC de moda y lifestyle.</div>
-      <div class="card-tags">#grwm #morningroutine #outfitoficina #outfitideas #girls #marketing</div>
-      <div class="card-section">
-        <div class="card-section-label">Caption</div>
-        <textarea class="card-field" placeholder="Escribe tu caption aquí…" rows="2"></textarea>
-      </div>
-      <div class="card-section">
-        <div class="card-section-label">Referencias</div>
-        <textarea class="card-field" placeholder="Outfit elegido, productos a mencionar, música…" rows="2"></textarea>
-      </div>
-      <div class="card-actions">
-        <a class="btn-action btn-script" href="#" onclick="return false">&#9654; Ver guión</a>
-        <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
-      </div>
-    </div>
-    <div class="card reuse">
-      <div class="card-top"><span class="type-badge">Reutilizado · Variante</span><span class="platform">Solo IG</span></div>
-      <div class="card-title">"GRWM para ir a la ofi" — versión solo tomas + música</div>
-      <div class="card-body">Mismo material grabado del GRWM de TikTok, editado sin voz, solo tomas y música. Estética más limpia para el feed de IG. Cero grabación extra.</div>
-      <div class="card-tags">#grwm #girls #outfitoficina</div>
-      <div class="card-section">
-        <div class="card-section-label">Caption</div>
-        <textarea class="card-field" placeholder="Escribe tu caption aquí…" rows="2"></textarea>
-      </div>
-      <div class="card-section">
-        <div class="card-section-label">Referencias</div>
-        <textarea class="card-field" placeholder="Música de fondo, transiciones, filtro…" rows="2"></textarea>
-      </div>
-      <div class="card-actions">
-        <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
-      </div>
-    </div>
     <div class="card story">
-      <div class="card-top"><span class="type-badge">Historia</span><span class="platform">IG + TikTok</span></div>
-      <div class="card-title">Historia del día</div>
-      <div class="story-pill">"No necesitas tener todo claro hoy… solo confiar en el proceso."</div>
-      <div class="card-body" style="margin-top:6px">Texto sobre fondo o foto de tu mañana ya grabada. Alineada con el GRWM del día.</div>
+      <div class="card-top"><span class="type-badge">Carrusel emocional · Guardable</span><span class="platform">IG + TikTok</span></div>
+      <div class="card-title">"Si tuviste que soltar más de lo que querías… quizás necesitas leer esto hoy"</div>
+
+      <div class="card-section">
+        <div class="card-section-label">Slides</div>
+        <ul class="escenas-list">
+          <li>"No estás perdiendo quien eras, estás evolucionando hacia quién viniste a ser."</li>
+          <li>"Cada despedida consciente es una puerta que se abre hacia tu crecimiento."</li>
+          <li>"Hay días en que duele la distancia, pero también hay días en que agradeces la valentía que te trajo hasta aquí."</li>
+          <li>CTA: "Si estás en proceso de cambio, guarda esto para recordarlo 💛"</li>
+        </ul>
+      </div>
+
+      <div class="card-section">
+        <div class="card-section-label">Producción</div>
+        <div class="card-body">Fondo limpio o fotos tuyas + tipografía clara. Sin grabar nada.</div>
+      </div>
+
+      <div class="card-section">
+        <div class="card-section-label">Caption</div>
+        <div class="card-copy">"A veces crecer también duele… pero eso no significa que estés retrocediendo.<br><br>Si estás en un proceso de cambio, guarda esto para recordarlo 💛<br><br>#crecimientopersonal #soltar #procesopersonal #motivacionreal #frasesqueayudan #reinventarse"</div>
+      </div>
+
       <div class="card-actions">
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
@@ -288,41 +278,29 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 
 <!-- JUEVES -->
 <div class="day-block-v1">
-  <div class="day-header"><div class="day-name-v1">Jueves</div><div class="day-divider"></div></div>
+  <div class="day-header"><div class="day-name-v1">Jueves 03 abr · Semana Santa</div><div class="day-divider"></div></div>
   <div class="cards-col">
     <div class="card light">
-      <div class="card-top"><span class="type-badge">Light · Trend</span><span class="platform">Solo TikTok</span></div>
-      <div class="card-title">"En realidad nunca estuve lista, solo fui valiente"</div>
-      <div class="card-body">Frase en pantalla con audio trending. Tú a cámara con actitud. Sin guión elaborado — la frase lo dice todo. Grabación: 3 minutos máximo.</div>
-      <div class="card-tags">#mamasoltera #toddler #mamareal #momtoks #motivacionpersonal</div>
+      <div class="card-top"><span class="type-badge">Light · Plantilla / Texto en pantalla</span><span class="platform">TikTok</span></div>
+      <div class="card-title">Contenido Semana Santa — Reflexión sobre lealtad</div>
+
+      <div class="card-section">
+        <div class="card-section-label">Texto en pantalla</div>
+        <div class="card-copy">"Un día como hoy Judas traicionó a Jesús.<br>La lealtad es un regalo demasiado caro…"</div>
+      </div>
+
+      <div class="card-section">
+        <div class="card-section-label">Producción</div>
+        <div class="card-body">Video fondo simple + texto en pantalla. Rápido de hacer, conecta por la fecha.</div>
+      </div>
+
       <div class="card-section">
         <div class="card-section-label">Caption</div>
-        <textarea class="card-field" placeholder="Escribe tu caption aquí…" rows="2"></textarea>
+        <div class="card-copy">"No todo el mundo merece tu lealtad.<br><br>#semanasanta #reflexion #lealtad #frasesreales #viral #fyp"</div>
       </div>
-      <div class="card-section">
-        <div class="card-section-label">Referencias</div>
-        <textarea class="card-field" placeholder="Audio trending, tipografía de pantalla…" rows="2"></textarea>
-      </div>
+
       <div class="card-actions">
-        <a class="btn-action btn-script" href="#" onclick="return false">&#9654; Ver guión</a>
-        <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
-      </div>
-    </div>
-    <div class="card reuse">
-      <div class="card-top"><span class="type-badge">Reutilizado</span><span class="platform">Solo IG</span></div>
-      <div class="card-title">Repost del video del lunes en Stories + encuesta</div>
-      <div class="card-body">Comparte el video de "mudarte a una nueva ciudad" en historias. Encuesta: "¿Te has mudado alguna vez sola?" Cero producción extra.</div>
-      <div class="card-section">
-        <div class="card-section-label">Referencias</div>
-        <textarea class="card-field" placeholder="Pregunta exacta de la encuesta, sticker…" rows="1"></textarea>
-      </div>
-    </div>
-    <div class="card story">
-      <div class="card-top"><span class="type-badge">Historia</span><span class="platform">IG + TikTok</span></div>
-      <div class="card-title">Historia del día</div>
-      <div class="story-pill">"No necesitas tener todo claro hoy… solo confiar en el proceso."</div>
-      <div class="card-body" style="margin-top:6px">Puede reutilizarse de la historia del miércoles cambiando el fondo. La frase es lo que importa.</div>
-      <div class="card-actions">
+        <a class="btn-action btn-script" href="https://docs.google.com/document/d/1EWFd5NfuQxDdLL2mwEkEF2xLU6e0ezdKO3ORte_x1TI/edit?usp=sharing" target="_blank">&#9654; Ver guión</a>
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
     </div>
@@ -331,48 +309,137 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 
 <!-- VIERNES -->
 <div class="day-block-v1">
-  <div class="day-header"><div class="day-name-v1">Viernes</div><div class="day-divider"></div></div>
+  <div class="day-header"><div class="day-name-v1">Viernes 04 abr</div><div class="day-divider"></div></div>
   <div class="cards-col">
     <div class="card heavy">
-      <div class="card-top"><span class="type-badge">Heavy · Video</span><span class="platform">Solo TikTok</span></div>
-      <div class="star-badge">Video 3 · Pieza fuerte</div>
-      <div class="card-title">"Playlist si acabas de salir de una relación tóxica — Parte 1"</div>
-      <div class="card-body">Tu guión ya está listo y es potente. 4 canciones con actuación y cambios de energía. Refuerza la transición visual entre canción 3 y 4. Publica en TikTok en la mañana.</div>
+      <div class="card-top"><span class="type-badge">Heavy · Storytelling emocional</span><span class="platform">IG + TikTok</span></div>
+      <div class="star-badge">Video 2 de la semana · Producción media</div>
+      <div class="card-title">"Esta semana pensé en rendirme…"</div>
+
+      <div class="card-section">
+        <div class="card-section-label">Hook</div>
+        <div class="card-copy">"Esta semana pensé en rendirme…"</div>
+      </div>
+
+      <div class="card-section">
+        <div class="card-section-label">Guión / Mensajes</div>
+        <ul class="escenas-list">
+          <li>Al empezar la semana me enfermé. Cansancio que no es solo físico.</li>
+          <li>Después de días de práctica juntas… me tocó soltar a mi peque. Dejarla ir sola.</li>
+          <li>Tuve un pequeño accidente en la cocina. Nada grave, pero cuando se junta todo…</li>
+          <li>Todo se siente más pesado. Donde rendirte parece más fácil.</li>
+          <li>Cierre: "Pero aquí sigo… aunque a veces no tenga todas las fuerzas. Solo soy valiente."</li>
+        </ul>
+      </div>
+
       <div class="card-section">
         <div class="card-section-label">Caption</div>
-        <textarea class="card-field" placeholder="Escribe tu caption aquí…" rows="2"></textarea>
+        <div class="card-copy">"Hay semanas que te ponen a prueba…<br><br>pero rendirte no siempre es una opción.<br><br>Si tú también sigues a pesar de todo, esto es para ti ❤️‍🔥<br><br>#motivacionreal #mujeresfuertes #resiliencia #historiasreales #disciplina #crecimientopersonal"</div>
       </div>
-      <div class="card-section">
-        <div class="card-section-label">Referencias</div>
-        <textarea class="card-field" placeholder="Las 4 canciones, audios de TikTok, outfit de transición…" rows="2"></textarea>
-      </div>
+
       <div class="card-actions">
-        <a class="btn-action btn-script" href="#" onclick="return false">&#9654; Ver guión</a>
+        <a class="btn-action btn-script" href="https://docs.google.com/document/d/1EWFd5NfuQxDdLL2mwEkEF2xLU6e0ezdKO3ORte_x1TI/edit?usp=sharing" target="_blank">&#9654; Ver guión</a>
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
     </div>
-    <div class="card reuse">
-      <div class="card-top"><span class="type-badge">Reutilizado · Carrusel</span><span class="platform">Solo IG</span></div>
-      <div class="card-title">"Playlist si acabas de salir de una relación tóxica — Parte 1"</div>
-      <div class="card-body">Mismo concepto en carrusel para IG. 1 canción por slide con tu comentario de por qué la elegiste. Alta tasa de guardados.</div>
+  </div>
+</div>
+
+<!-- SÁBADO -->
+<div class="day-block-v1">
+  <div class="day-header"><div class="day-name-v1">Sábado 05 abr</div><div class="day-divider"></div></div>
+  <div class="cards-col">
+    <div class="card light">
+      <div class="card-top"><span class="type-badge">Light · Trend / Acting</span><span class="platform">Solo TikTok</span></div>
+      <div class="card-title">Trend ligero — "Yo fingiendo que todo está bajo control"</div>
+
+      <div class="card-section">
+        <div class="card-section-label">Opciones de texto en pantalla</div>
+        <ul class="escenas-list">
+          <li>"Yo fingiendo que todo está bajo control…"</li>
+          <li>"Cuando todos creen que ya te adaptaste…"</li>
+        </ul>
+      </div>
+
+      <div class="card-section">
+        <div class="card-section-label">Producción</div>
+        <div class="card-body">Lip sync o acting expresivo. Sin guión. Grabación: 5 minutos máximo.</div>
+      </div>
+
       <div class="card-section">
         <div class="card-section-label">Caption</div>
-        <textarea class="card-field" placeholder="Escribe tu caption aquí…" rows="2"></textarea>
+        <div class="card-copy">"Seguimos en proceso… aunque no siempre se note 😅<br><br>#trend #fyp #procesopersonal #nuevavida #humorreal #viralperu"</div>
       </div>
+
       <div class="card-section">
-        <div class="card-section-label">Referencias</div>
-        <textarea class="card-field" placeholder="Diseño de slides, paleta, tipografía…" rows="2"></textarea>
+        <div class="card-section-label">Referencia</div>
+        <div class="card-copy">
+          <a href="https://www.tiktok.com/@karengutmac_/video/7541094315368418581" target="_blank" style="color:var(--light);text-decoration:none;">&#8599; Ver referencia en TikTok</a>
+        </div>
       </div>
+
       <div class="card-actions">
+        <a class="btn-action btn-script" href="https://docs.google.com/document/d/1EWFd5NfuQxDdLL2mwEkEF2xLU6e0ezdKO3ORte_x1TI/edit?usp=sharing" target="_blank">&#9654; Ver guión</a>
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- DOMINGO -->
+<div class="day-block-v1">
+  <div class="day-header"><div class="day-name-v1">Domingo 06 abr</div><div class="day-divider"></div></div>
+  <div class="cards-col">
     <div class="card story">
-      <div class="card-top"><span class="type-badge">Historia</span><span class="platform">IG + TikTok</span></div>
-      <div class="card-title">Historia del día</div>
-      <div class="story-pill">"Llegaste hasta aquí… y eso también merece ser celebrado."</div>
-      <div class="card-body" style="margin-top:6px">Cierre emocional de la semana. Alineada con la playlist del día. Muy compartible por mujeres en proceso de sanación.</div>
+      <div class="card-top"><span class="type-badge">Carrusel lifestyle · Marca personal</span><span class="platform">Solo IG</span></div>
+      <div class="card-title">"Haciendo de un lugar nuevo… mi lugar"</div>
+
+      <div class="card-section">
+        <div class="card-section-label">Slides</div>
+        <ul class="escenas-list">
+          <li>Portada: "Haciendo de un lugar nuevo… mi lugar"</li>
+          <li>"Paso a paso"</li>
+          <li>"Sin prisa"</li>
+        </ul>
+      </div>
+
+      <div class="card-section">
+        <div class="card-section-label">Tomas / Producción</div>
+        <div class="card-body">Caminando por la ciudad, tomando café, detalles aesthetic, poses naturales. Estética lifestyle.</div>
+      </div>
+
+      <div class="card-section">
+        <div class="card-section-label">Caption</div>
+        <div class="card-copy">"Haciendo de un lugar nuevo… mi lugar ✨<br><br>No todo se siente como casa al inicio, pero poco a poco todo encuentra su lugar.<br><br>#lifestyle #nuevaciudad #vidareal #aestheticlife #outfitinspo #crecimientopersonal"</div>
+      </div>
+
       <div class="card-actions">
+        <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
+      </div>
+    </div>
+
+    <div class="card heavy">
+      <div class="card-top"><span class="type-badge">Heavy · TikTok Storytime</span><span class="platform">Solo TikTok</span></div>
+      <div class="star-badge">Video 3 de la semana</div>
+      <div class="card-title">"Lo que nadie te dice sobre mudarte a una nueva ciudad"</div>
+
+      <div class="card-section">
+        <div class="card-section-label">Hook</div>
+        <div class="card-copy">"Lo que nadie te dice sobre mudarte a una nueva ciudad…"</div>
+      </div>
+
+      <div class="card-section">
+        <div class="card-section-label">Estructura del storytime</div>
+        <ul class="escenas-list">
+          <li>"Los primeros días son emocionantes… pero después llega una mini depresión post mudanza." Todo se ve moderno, bonito… pero nadie te dice que puede sentirse muy solitario.</li>
+          <li>"El Maps y las apps de taxi se vuelven tus mejores amigos." Usas taxi para todo o caminas con el celular como guía turística.</li>
+          <li>"Empiezas a extrañar cosas que antes parecían tan simples." Las calles de tu barrio, los lugares de siempre, la rutina conocida.</li>
+          <li>Cierre: "Pero todo eso… también es parte de convertirte en alguien más fuerte."</li>
+        </ul>
+      </div>
+
+      <div class="card-actions">
+        <a class="btn-action btn-script" href="https://docs.google.com/document/d/1EWFd5NfuQxDdLL2mwEkEF2xLU6e0ezdKO3ORte_x1TI/edit?usp=sharing" target="_blank">&#9654; Ver guión</a>
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
     </div>
