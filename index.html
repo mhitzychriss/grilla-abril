@@ -128,6 +128,26 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
   .stat-value{font-size:20px}
   .leg{font-size:12px}
 }
+@media(max-width:480px){
+  body{padding:14px 12px;font-size:15px}
+  .title{font-size:22px}
+  .card-title{font-size:14px;line-height:1.45}
+  .card-body{font-size:13px;line-height:1.6}
+  .card-copy{font-size:13px;line-height:1.6}
+  .escenas-list li{font-size:13px;padding:5px 0}
+  .card-section-label{font-size:11px}
+  .type-badge{font-size:11px}
+  .platform{font-size:11px}
+  .story-pill{font-size:12px}
+  .card-field{font-size:13px}
+  .btn-action{font-size:13px;padding:10px 14px}
+  .day-block-v1 .day-name-v1{font-size:13px;padding:7px 14px}
+  .stat-label{font-size:11px}
+  .stat-value{font-size:18px}
+  .week-label{font-size:12px}
+  .leg{font-size:12px}
+  .legend-title{font-size:11px}
+}
 </style>
 </head>
 <body>
@@ -162,49 +182,59 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 
 <!-- ══ SEMANA 1 ══ -->
 <div class="week active" id="w0">
-<div class="week-label">Semana 30 mar – 05 abr · "Nueva ciudad, nueva versión de mí"</div>
+<div class="week-label">Semana 30 mar – 06 abr · "Nueva ciudad, nueva versión de mí"</div>
 
 <!-- LUNES -->
 <div class="day-block-v1">
   <div class="day-header"><div class="day-name-v1">Lunes 31 mar</div><div class="day-divider"></div></div>
   <div class="cards-col">
+
     <div class="card heavy">
       <div class="card-top"><span class="type-badge">Heavy · Video storytelling</span><span class="platform">IG + TikTok</span></div>
       <div class="star-badge">Video 1 de la semana · Producción media</div>
       <div class="card-title">"Nadie te prepara para lo que se siente mudarte a una nueva ciudad"</div>
-
       <div class="card-section">
         <div class="card-section-label">Hook</div>
         <div class="card-copy">"Nadie te prepara para lo que se siente mudarte a una nueva ciudad"</div>
       </div>
-
       <div class="card-section">
         <div class="card-section-label">Mensajes clave</div>
         <div class="card-body">Emoción inicial → cambio → incertidumbre → cierre: <em>"No estaba lista… pero fui valiente"</em></div>
       </div>
-
       <div class="card-section">
-        <div class="card-section-label">Escenas / Tomas</div>
+        <div class="card-section-label">Guión escena por escena</div>
         <ul class="escenas-list">
-          <li>Mirando por el balcón, suspirando</li>
-          <li>Trabajando con la laptop, disociando, con ansiedad</li>
-          <li>Moviendo muebles, mirando la pared — pensando cómo decorar</li>
-          <li>Caminando hacia la estación, esperando el metro, dentro del metro (selfie)</li>
-          <li>Caminando hasta la oficina (sin cámara frontal)</li>
-          <li>Hablando con el equipo en Comunal, mirando por la ventana</li>
+          <li>Todo cambio viene con miedo. Mudarte te obliga a reinventar tu vida entera. → <em>Mirando por el balcón, suspirando</em></li>
+          <li>Cuando tomas la decisión de irte, lo haces con un propósito. Recordarlo te sostiene. → <em>Trabajando con la laptop, disociando, con ansiedad</em></li>
+          <li>Empiezas a crear nuevas rutinas, nuevos espacios, nuevas formas de sentirte en casa. → <em>Moviendo muebles, mirando la pared — cómo decorar este espacio</em></li>
+          <li>Hasta que un día miras a tu alrededor… y entiendes por qué estás ahí. → <em>Caminando a la estación, esperando el metro, dentro del metro (selfie), caminando a la ofi</em></li>
+          <li>Y recuerdas algo importante: lo valiente que eres por perseguir la vida que viniste a construir. → <em>Hablando con el equipo en Comunal, mirando por la ventana</em></li>
         </ul>
       </div>
-
       <div class="card-section">
         <div class="card-section-label">Caption</div>
         <div class="card-copy">"Mudarte suena emocionante… hasta que lo vives.<br><br>No estaba lista, pero sabía que tenía que hacerlo.<br><br>#nuevaciudad #mudarse #empezardecero #cambiodevida #valentia #crecimientopersonal"</div>
       </div>
-
       <div class="card-actions">
         <a class="btn-action btn-script" href="https://docs.google.com/document/d/1EWFd5NfuQxDdLL2mwEkEF2xLU6e0ezdKO3ORte_x1TI/edit?usp=sharing" target="_blank">&#9654; Ver guión</a>
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
     </div>
+
+    <div class="card story">
+      <div class="card-top"><span class="type-badge">Historia del día</span><span class="platform">IG + TikTok</span></div>
+      <div class="card-title">Historia — Lunes</div>
+      <div class="story-pill">"Una nueva semana de oportunidades para hacerlo mejor que ayer."</div>
+      <div class="card-body" style="margin-top:8px">Texto sobre fondo amanecer o foto de café. Sin producción extra. Conecta desde el arranque del lunes.</div>
+      <div class="card-section">
+        <div class="card-section-label">Toma sugerida</div>
+        <div class="card-body">Amanecer / café / luz natural de mañana</div>
+      </div>
+      <div class="card-actions">
+        <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -212,32 +242,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 <div class="day-block-v1">
   <div class="day-header"><div class="day-name-v1">Martes 01 abr</div><div class="day-divider"></div></div>
   <div class="cards-col">
+
     <div class="card light">
       <div class="card-top"><span class="type-badge">Light · Trend / Audio viral</span><span class="platform">Solo TikTok</span></div>
       <div class="card-title">"Lo que suena en mi cabeza desde que decidí irme de mi ciudad"</div>
-
       <div class="card-section">
         <div class="card-section-label">Formato</div>
-        <div class="card-body">Lip sync o acting con audio viral. Tomar decisiones grandes también viene con ruido mental.</div>
+        <div class="card-body">Lip sync o acting con audio viral. Tomar decisiones grandes también viene con ruido mental. Grabación: 5 min máximo.</div>
       </div>
-
       <div class="card-section">
         <div class="card-section-label">Audio de referencia</div>
-        <div class="card-copy">
-          <a href="https://www.tiktok.com/@armandobrj37/video/7568933646380436756" target="_blank" style="color:var(--light);text-decoration:none;">&#8599; Ver audio en TikTok</a>
-        </div>
+        <div class="card-copy"><a href="https://www.tiktok.com/@armandobrj37/video/7568933646380436756" target="_blank" style="color:var(--light);text-decoration:none;">&#8599; Ver audio en TikTok</a></div>
       </div>
-
       <div class="card-section">
         <div class="card-section-label">Caption</div>
         <div class="card-copy">"Tomar decisiones grandes también viene con ruido mental…<br><br>#reinventarse #empezardecero #nuevavida #procesopersonal #fyp #viralperu"</div>
       </div>
-
       <div class="card-actions">
         <a class="btn-action btn-script" href="https://docs.google.com/document/d/1EWFd5NfuQxDdLL2mwEkEF2xLU6e0ezdKO3ORte_x1TI/edit?usp=sharing" target="_blank">&#9654; Ver guión</a>
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
     </div>
+
+    <div class="card story">
+      <div class="card-top"><span class="type-badge">Historia del día</span><span class="platform">IG + TikTok</span></div>
+      <div class="card-title">Historia — Martes</div>
+      <div class="story-pill">"No necesitas tener todo claro hoy… solo confiar en el proceso."</div>
+      <div class="card-body" style="margin-top:8px">Texto sobre foto de rutina o cielo. Breve, poderosa, no requiere producción.</div>
+      <div class="card-section">
+        <div class="card-section-label">Toma sugerida</div>
+        <div class="card-body">Rutina de mañana / cielo / camino al trabajo</div>
+      </div>
+      <div class="card-actions">
+        <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -245,10 +285,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 <div class="day-block-v1">
   <div class="day-header"><div class="day-name-v1">Miércoles 02 abr</div><div class="day-divider"></div></div>
   <div class="cards-col">
+
     <div class="card story">
       <div class="card-top"><span class="type-badge">Carrusel emocional · Guardable</span><span class="platform">IG + TikTok</span></div>
       <div class="card-title">"Si tuviste que soltar más de lo que querías… quizás necesitas leer esto hoy"</div>
-
       <div class="card-section">
         <div class="card-section-label">Slides</div>
         <ul class="escenas-list">
@@ -258,21 +298,33 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
           <li>CTA: "Si estás en proceso de cambio, guarda esto para recordarlo 💛"</li>
         </ul>
       </div>
-
       <div class="card-section">
         <div class="card-section-label">Producción</div>
         <div class="card-body">Fondo limpio o fotos tuyas + tipografía clara. Sin grabar nada.</div>
       </div>
-
       <div class="card-section">
         <div class="card-section-label">Caption</div>
         <div class="card-copy">"A veces crecer también duele… pero eso no significa que estés retrocediendo.<br><br>Si estás en un proceso de cambio, guarda esto para recordarlo 💛<br><br>#crecimientopersonal #soltar #procesopersonal #motivacionreal #frasesqueayudan #reinventarse"</div>
       </div>
-
       <div class="card-actions">
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
     </div>
+
+    <div class="card story">
+      <div class="card-top"><span class="type-badge">Historia del día</span><span class="platform">IG + TikTok</span></div>
+      <div class="card-title">Historia — Miércoles</div>
+      <div class="story-pill">"Date permiso de ir a tu ritmo… la vida no es una carrera."</div>
+      <div class="card-body" style="margin-top:8px">Fondo tranquilo, tipografía limpia. Complementa el carrusel del día.</div>
+      <div class="card-section">
+        <div class="card-section-label">Toma sugerida</div>
+        <div class="card-body">Fondo neutro tranquilo / foto natural tuya</div>
+      </div>
+      <div class="card-actions">
+        <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -280,30 +332,42 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 <div class="day-block-v1">
   <div class="day-header"><div class="day-name-v1">Jueves 03 abr · Semana Santa</div><div class="day-divider"></div></div>
   <div class="cards-col">
+
     <div class="card light">
       <div class="card-top"><span class="type-badge">Light · Plantilla / Texto en pantalla</span><span class="platform">TikTok</span></div>
-      <div class="card-title">Contenido Semana Santa — Reflexión sobre lealtad</div>
-
+      <div class="card-title">Reflexión Semana Santa — "La lealtad es un regalo demasiado caro"</div>
       <div class="card-section">
         <div class="card-section-label">Texto en pantalla</div>
         <div class="card-copy">"Un día como hoy Judas traicionó a Jesús.<br>La lealtad es un regalo demasiado caro…"</div>
       </div>
-
       <div class="card-section">
         <div class="card-section-label">Producción</div>
-        <div class="card-body">Video fondo simple + texto en pantalla. Rápido de hacer, conecta por la fecha.</div>
+        <div class="card-body">Video fondo simple + texto en pantalla. Rápido de hacer, conecta por la fecha. Sin guión elaborado.</div>
       </div>
-
       <div class="card-section">
         <div class="card-section-label">Caption</div>
         <div class="card-copy">"No todo el mundo merece tu lealtad.<br><br>#semanasanta #reflexion #lealtad #frasesreales #viral #fyp"</div>
       </div>
-
       <div class="card-actions">
         <a class="btn-action btn-script" href="https://docs.google.com/document/d/1EWFd5NfuQxDdLL2mwEkEF2xLU6e0ezdKO3ORte_x1TI/edit?usp=sharing" target="_blank">&#9654; Ver guión</a>
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
     </div>
+
+    <div class="card story">
+      <div class="card-top"><span class="type-badge">Historia del día</span><span class="platform">IG + TikTok</span></div>
+      <div class="card-title">Historia — Jueves</div>
+      <div class="story-pill">"Hoy elige paz, incluso si todo afuera es ruido."</div>
+      <div class="card-body" style="margin-top:8px">Fondo minimalista, fecha festiva. Alineada con la energía de Semana Santa.</div>
+      <div class="card-section">
+        <div class="card-section-label">Toma sugerida</div>
+        <div class="card-body">Fondo minimalista / vela / luz suave</div>
+      </div>
+      <div class="card-actions">
+        <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -311,37 +375,53 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 <div class="day-block-v1">
   <div class="day-header"><div class="day-name-v1">Viernes 04 abr</div><div class="day-divider"></div></div>
   <div class="cards-col">
+
     <div class="card heavy">
       <div class="card-top"><span class="type-badge">Heavy · Storytelling emocional</span><span class="platform">IG + TikTok</span></div>
       <div class="star-badge">Video 2 de la semana · Producción media</div>
       <div class="card-title">"Esta semana pensé en rendirme…"</div>
-
       <div class="card-section">
         <div class="card-section-label">Hook</div>
         <div class="card-copy">"Esta semana pensé en rendirme…"</div>
       </div>
-
       <div class="card-section">
-        <div class="card-section-label">Guión / Mensajes</div>
+        <div class="card-section-label">Estructura del guión</div>
         <ul class="escenas-list">
           <li>Al empezar la semana me enfermé. Cansancio que no es solo físico.</li>
-          <li>Después de días de práctica juntas… me tocó soltar a mi peque. Dejarla ir sola.</li>
-          <li>Tuve un pequeño accidente en la cocina. Nada grave, pero cuando se junta todo…</li>
-          <li>Todo se siente más pesado. Donde rendirte parece más fácil.</li>
-          <li>Cierre: "Pero aquí sigo… aunque a veces no tenga todas las fuerzas. Solo soy valiente."</li>
+          <li>Después de días de práctica juntas… me tocó soltar a mi peque. Dejarla ir sola no fue fácil.</li>
+          <li>Tuve un pequeño accidente en la cocina. Nada grave, pero cuando se junta todo, todo pesa más.</li>
+          <li>Donde rendirte parece más fácil. Pero aquí sigo…</li>
+          <li>Cierre: <em>"Pero aquí sigo… aunque a veces no tenga todas las fuerzas. Solo soy valiente."</em></li>
         </ul>
       </div>
-
+      <div class="card-section">
+        <div class="card-section-label">Escenas / Tomas</div>
+        <div class="card-body">Clips reales de tu semana — momentos vulnerables, cotidianos, sin glamour.</div>
+      </div>
       <div class="card-section">
         <div class="card-section-label">Caption</div>
-        <div class="card-copy">"En los momentos difíciles,<br><br>rendirte no es la única opción, puedes elegir seguir siendo valiente.<br><br>Si tú también sigues a pesar de todo, esto es para ti ❤️‍🔥<br><br>#motivacionreal #mujeresfuertes #resiliencia #historiasreales #disciplina #crecimientopersonal"</div>
+        <div class="card-copy">"Hay semanas que te ponen a prueba…<br><br>pero rendirte no siempre es una opción.<br><br>Si tú también sigues a pesar de todo, esto es para ti ❤️‍🔥<br><br>#motivacionreal #mujeresfuertes #resiliencia #historiasreales #disciplina #crecimientopersonal"</div>
       </div>
-
       <div class="card-actions">
         <a class="btn-action btn-script" href="https://docs.google.com/document/d/1EWFd5NfuQxDdLL2mwEkEF2xLU6e0ezdKO3ORte_x1TI/edit?usp=sharing" target="_blank">&#9654; Ver guión</a>
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
     </div>
+
+    <div class="card story">
+      <div class="card-top"><span class="type-badge">Historia del día</span><span class="platform">IG + TikTok</span></div>
+      <div class="card-title">Historia — Viernes</div>
+      <div class="story-pill">"Llegaste hasta aquí… y eso también merece ser celebrado."</div>
+      <div class="card-body" style="margin-top:8px">Cierre emocional de viernes. Perfecta para cerrar la semana laboral y conectar con mujeres que también están en proceso.</div>
+      <div class="card-section">
+        <div class="card-section-label">Toma sugerida</div>
+        <div class="card-body">Atardecer / luz cálida / foto tuya de perfil</div>
+      </div>
+      <div class="card-actions">
+        <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -349,40 +429,50 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 <div class="day-block-v1">
   <div class="day-header"><div class="day-name-v1">Sábado 05 abr</div><div class="day-divider"></div></div>
   <div class="cards-col">
-    <div class="card light">
-      <div class="card-top"><span class="type-badge">Light · Trend / Acting</span><span class="platform">Solo TikTok</span></div>
-      <div class="card-title">Trend ligero — "Yo fingiendo que todo está bajo control"</div>
 
+    <div class="card light">
+      <div class="card-top"><span class="type-badge">Light · Trend / Lip sync</span><span class="platform">Solo TikTok</span></div>
+      <div class="card-title">"Cuando me dicen: 'a ti te va bien…'"</div>
       <div class="card-section">
         <div class="card-section-label">Opciones de texto en pantalla</div>
         <ul class="escenas-list">
           <li>"Yo fingiendo que todo está bajo control…"</li>
           <li>"Cuando todos creen que ya te adaptaste…"</li>
+          <li>"Cuando me dicen: 'a ti te va bien…'"</li>
         </ul>
       </div>
-
       <div class="card-section">
         <div class="card-section-label">Producción</div>
-        <div class="card-body">Lip sync o acting expresivo. Sin guión. Grabación: 5 minutos máximo.</div>
+        <div class="card-body">Lip sync o acting expresivo en cocina o casa. Sin guión. Grabación: 5 minutos máximo.</div>
       </div>
-
+      <div class="card-section">
+        <div class="card-section-label">Referencia</div>
+        <div class="card-copy"><a href="https://www.tiktok.com/@karengutmac_/video/7541094315368418581" target="_blank" style="color:var(--light);text-decoration:none;">&#8599; Ver referencia en TikTok</a></div>
+      </div>
       <div class="card-section">
         <div class="card-section-label">Caption</div>
         <div class="card-copy">"Seguimos en proceso… aunque no siempre se note 😅<br><br>#trend #fyp #procesopersonal #nuevavida #humorreal #viralperu"</div>
       </div>
-
-      <div class="card-section">
-        <div class="card-section-label">Referencia</div>
-        <div class="card-copy">
-          <a href="https://www.tiktok.com/@karengutmac_/video/7541094315368418581" target="_blank" style="color:var(--light);text-decoration:none;">&#8599; Ver referencia en TikTok</a>
-        </div>
-      </div>
-
       <div class="card-actions">
         <a class="btn-action btn-script" href="https://docs.google.com/document/d/1EWFd5NfuQxDdLL2mwEkEF2xLU6e0ezdKO3ORte_x1TI/edit?usp=sharing" target="_blank">&#9654; Ver guión</a>
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
     </div>
+
+    <div class="card story">
+      <div class="card-top"><span class="type-badge">Historia del día</span><span class="platform">IG + TikTok</span></div>
+      <div class="card-title">Historia — Sábado</div>
+      <div class="story-pill">"Permítete soltar la prisa… y disfrutar dónde estás hoy."</div>
+      <div class="card-body" style="margin-top:8px">Tono de descanso y disfrute. Perfecta para el sábado. Sin producción adicional.</div>
+      <div class="card-section">
+        <div class="card-section-label">Toma sugerida</div>
+        <div class="card-body">Aire libre / parque / café del sábado</div>
+      </div>
+      <div class="card-actions">
+        <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -390,29 +480,26 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 <div class="day-block-v1">
   <div class="day-header"><div class="day-name-v1">Domingo 06 abr</div><div class="day-divider"></div></div>
   <div class="cards-col">
+
     <div class="card story">
       <div class="card-top"><span class="type-badge">Carrusel lifestyle · Marca personal</span><span class="platform">Solo IG</span></div>
       <div class="card-title">"Haciendo de un lugar nuevo… mi lugar"</div>
-
       <div class="card-section">
         <div class="card-section-label">Slides</div>
         <ul class="escenas-list">
-          <li>Portada: "Haciendo de un lugar nuevo… mi lugar"</li>
+          <li>Portada: "Haciendo de un lugar nuevo… mi lugar ✨"</li>
           <li>"Paso a paso"</li>
           <li>"Sin prisa"</li>
         </ul>
       </div>
-
       <div class="card-section">
         <div class="card-section-label">Tomas / Producción</div>
-        <div class="card-body">Caminando por la ciudad, tomando café, detalles aesthetic, poses naturales. Estética lifestyle.</div>
+        <div class="card-body">Caminando por la ciudad, tomando café, detalles aesthetic, poses naturales. Estética lifestyle limpia.</div>
       </div>
-
       <div class="card-section">
         <div class="card-section-label">Caption</div>
         <div class="card-copy">"Haciendo de un lugar nuevo… mi lugar ✨<br><br>No todo se siente como casa al inicio, pero poco a poco todo encuentra su lugar.<br><br>#lifestyle #nuevaciudad #vidareal #aestheticlife #outfitinspo #crecimientopersonal"</div>
       </div>
-
       <div class="card-actions">
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
@@ -422,27 +509,39 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
       <div class="card-top"><span class="type-badge">Heavy · TikTok Storytime</span><span class="platform">Solo TikTok</span></div>
       <div class="star-badge">Video 3 de la semana</div>
       <div class="card-title">"Lo que nadie te dice sobre mudarte a una nueva ciudad"</div>
-
       <div class="card-section">
         <div class="card-section-label">Hook</div>
         <div class="card-copy">"Lo que nadie te dice sobre mudarte a una nueva ciudad…"</div>
       </div>
-
       <div class="card-section">
         <div class="card-section-label">Estructura del storytime</div>
         <ul class="escenas-list">
-          <li>"Los primeros días son emocionantes… pero después llega una mini depresión post mudanza." Todo se ve moderno, bonito… pero nadie te dice que puede sentirse muy solitario.</li>
-          <li>"El Maps y las apps de taxi se vuelven tus mejores amigos." Usas taxi para todo o caminas con el celular como guía turística.</li>
-          <li>"Empiezas a extrañar cosas que antes parecían tan simples." Las calles de tu barrio, los lugares de siempre, la rutina conocida.</li>
-          <li>Cierre: "Pero todo eso… también es parte de convertirte en alguien más fuerte."</li>
+          <li><strong>Parte 1:</strong> "Los primeros días son emocionantes… pero después llega una mini depresión post mudanza." Todo se ve moderno, bonito… pero nadie te dice que puede sentirse muy solitario. El ritmo es acelerado, todos en lo suyo.</li>
+          <li><strong>Parte 2:</strong> "El Maps y las apps de taxi se vuelven tus mejores amigos." Usas taxi para todo o caminas con el celular como guía turística. Parte del proceso hasta que aprendes a moverte sola.</li>
+          <li><strong>Parte 3:</strong> "Empiezas a extrañar cosas que antes parecían tan simples." Las calles de tu barrio, los lugares de siempre, la rutina conocida.</li>
+          <li><strong>Cierre:</strong> "Pero todo eso… también es parte de convertirte en alguien más fuerte."</li>
         </ul>
       </div>
-
       <div class="card-actions">
         <a class="btn-action btn-script" href="https://docs.google.com/document/d/1EWFd5NfuQxDdLL2mwEkEF2xLU6e0ezdKO3ORte_x1TI/edit?usp=sharing" target="_blank">&#9654; Ver guión</a>
         <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
       </div>
     </div>
+
+    <div class="card story">
+      <div class="card-top"><span class="type-badge">Historia del día</span><span class="platform">IG + TikTok</span></div>
+      <div class="card-title">Historia — Domingo</div>
+      <div class="story-pill">"Fue una semana intensa… ahora toca recargar."</div>
+      <div class="card-body" style="margin-top:8px">Cierre suave de la semana. Tono de descanso y gratitud. La más humana y cercana de la semana.</div>
+      <div class="card-section">
+        <div class="card-section-label">Toma sugerida</div>
+        <div class="card-body">Noche tranquila / luz cálida / calma del domingo</div>
+      </div>
+      <div class="card-actions">
+        <a class="btn-action btn-graphic" href="#" onclick="return false">&#9633; Ver pieza</a>
+      </div>
+    </div>
+
   </div>
 </div>
 
